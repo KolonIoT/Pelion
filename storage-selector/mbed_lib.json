@@ -1,0 +1,25 @@
+{
+    "name": "storage-selector",
+    "config": {
+        "storage": {
+            "help": "Options are SD_CARD, SPI_FLASH, DATA_FLASH, INTERNAL_FLASH, and HEAP",
+            "required": true
+        },
+        "filesystem": {
+            "help": "Options are FAT and LITTLE",
+            "required": false
+        },
+        "filesystem-instances": {
+            "help": "Number of available filesystems/partitions (Default: 1)",
+            "value": 1
+        },
+        "mount-point": {
+            "help": "Where to mount the filesystem",
+            "value": "NULL"
+        },
+        "heap_size": {
+            "help": "Size to use for HEAP storage option",
+            "value": 2048
+        }
+    }
+}
